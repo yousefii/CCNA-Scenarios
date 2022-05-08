@@ -1,0 +1,36 @@
+Connected and local Routes:
+1- Configure the PCs with an IP address and default gateway  according to the lab topology diagram.
+2- Configure IP addresses on R1 according to the Lab topology diagram.
+3- Verify routes have been automatically added for the connected and local networks
+4- Should you be able to ping from PC1 to PC2? verify this.
+5- Verify the traffic path from PC1 to PC2.
+6- Should you be able to ping from PC1 to PC3?verify this.
+
+Static Routes:
+7- Configure IP addresses on R2, R3 and R4 according to the Lab topology diagram.
+    Do not configure the internet Ethernret 3/0 interface on R4.DO not configure R5.
+8- Configure static routes on R1, R2, R3, and R4 to allow connectivity between all their subnets.
+    Use /24 perfixes for each network.
+9- Verify connectivity between PC1, PC2 and PC3.
+10- Verify the path traffic takes from PC1 to PC3.
+
+Summary Routes:
+11- Remove all the static routes on R1.
+12- Verify that PC1 loses connectivity to PC3.
+13- Restore connectivity to all subnets with a single command on R.
+14- Verify the routing table on R1 does not contain /24 routes to remote subnets.
+15- Ensure that connectivity restored between PC1 and PC3.
+
+Longest Prefix Match:
+16- Configure IP addresses on R5 according to the LAB topology diagram.
+17- Do not add any additional routes. Does PC1 have reachability to the Ethernet interface on R5? If so which path will the traffic take?
+18- Ensure reachability over the shortest possible path from R5 to all directly connected networks on R1. Achieve this with a single command.
+19- Verify the path traffic takes from PC1 to the Ethernet interface in R5.
+20- Verify the path the return traffic take from R5 to PC1.
+21- Ensure that traffic between PC1 and the Ethernet interface in R5 tale the most direct path in both directions.
+22- Verify that traffic between PC1 and Ethernet interface on R5 takes the most direct path in both direction.
+
+Default Route and Load Balancing:
+23- Configure an IP address on the Internet Interface on R4 according to the LAB topology diagram.
+24- Ensure that all PCs have a route out to the internet through the Internet service Provider connection on R4.
+25-Traffic between PC1 and the Internet should be load balanced over R2 and R5.
