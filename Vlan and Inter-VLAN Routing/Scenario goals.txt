@@ -1,0 +1,27 @@
+1) All routers and switches are in factory default state.View the VLAN database on SW1 to verify no VLANs have been added 
+2) View the default switchport status on the link from SW1 to SW2
+3) Configure the links between switches as trunks 
+4) Configure SW1 as VTP Server in the VTP domain Flackbox 
+5) SW2 must not synchronize its VLAN database with SW1
+6) SW3 must learn VLAN information from SW1.VLANs should not be edited on SW3
+7) Add the Eng, Sales, and Native VLANs on all switches 
+8) Verify the VLANs are in the database on each switch 
+9) Configure the trunk links to use VLAN 199 as the native VLAN for better security 
+10) Configure the switchports connected to the PCs with the correct VLAN configuration 
+11) Verify the Eng1 PC has connectivity to Eng3
+12) Verify Sales1 has connectivity to Sales 3
+13) Configure interface FastEthernet0/0 on R1 as the default gateway for the Eng PCs
+14) Configure interface FastEthernet0/1 on R1 as the default gateway for the Sales PCs
+15)Configure SW2 to support inter-VLAN routing using R1 as the default gateway
+16)Verify the Eng1 PC has connectivity to the VLAN 20 interface on R1
+17)Verify the Eng1 PC has connectivity to Sales 1
+18)Clean up: Shut down interface FastEthernet0/1 on R1 
+19)Configure sub-interfaces on FastEthernet 0/0 on R1 as the default gateway for the Eng and Sales PCs
+20)Configure SW2 to support inter-VLAN routing using R1 as the default gateway 
+21)Verify the Eng1 PC has connectivity to the VLAN 20 interface on R1 
+22)Verify the Eng1 PC has connectivity to Sales1
+23)Clean up: Shut down interface FastEthernet0/0 on R1 
+24)Enable layer 3 routing on SW2
+25)Configure SVIs on SW2 to support inter-VLAN routing between the Eng and Sales VLANs 
+26)Verify the Eng1 PC has connectivity to the VLAN 20 interface on SW2 
+27)Verify the Eng1 PC has connectivity to Sales1 
