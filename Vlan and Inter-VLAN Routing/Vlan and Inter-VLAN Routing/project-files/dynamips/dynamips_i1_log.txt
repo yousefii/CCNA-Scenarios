@@ -1,0 +1,10 @@
+May 09 07:57:07.891 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+May 09 07:57:07.891 HYPERVISOR: Started on IP = 192.168.204.1, TCP port = 60544.
+May 09 07:57:08.336 HYPERVISOR: exec_cmd: hypervisor version 
+May 09 07:57:08.336 HYPERVISOR: exec_cmd: hypervisor working_dir E:\CCNA-Scenarios\Vlan and Inter-VLAN Routing Configuration\project-files\dynamips 
+May 09 07:57:08.399 GENERAL: working_dir=E:\CCNA-Scenarios\Vlan and Inter-VLAN Routing Configuration\project-files\dynamips
+May 09 07:57:08.399 HYPERVISOR: exec_cmd: ethsw create Ethernetswitch-1 
+May 09 07:57:24.350 HYPERVISOR: exec_cmd: ethsw delete Ethernetswitch-1 
+May 09 07:57:24.350 HYPERVISOR: exec_cmd: hypervisor stop 
+May 09 07:57:24.597 HYPERVISOR: Stopped.
+May 09 07:57:24.597 GENERAL: reset done.
