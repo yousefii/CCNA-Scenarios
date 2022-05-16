@@ -1,0 +1,46 @@
+Host Setup
+1)Configure the IP address and default gateway on PC1, PC2 and Ext_S1 as shown:
+************
+PPP with PAP Authentication
+2)Configure the leased line from router NY-CPE1 to the service provider router SP1 according to the network topology diagram.
+Interface Serial 3/0 is used on both sides of the link.
+The service provider has instructed you to configure PPP with PAP authentication using the username NY1 and password iman
+Configure one way authentication, do not authenticate the service provider. Configure a bandwidth of 128kbps.
+3)Verify the interface is up.
+4)Ping the service provider to verify connectivity.
+5)Configure a default static route for Internet access over the leased line.
+6)Ping the external server at 203.0.113.18 from NY-CPE1 to verify Internet access.
+7)Do you expect PC1 to be able to ping the external server at 203.0.113.18? Why or why not? Verify this.
+ ************
+MultiLink PPP with CHAP Authentication
+8)Configure a MultiLink PPP leased line from router BOS-CPE to the service provider router SP2 according to the network topology diagram.
+Interfaces Serial 3/0 and 3/1 are used on both sides of the link.
+The service provider has instructed you to configure PPP with two way CHAP authentication using the password Flackbox2. The service provider router’s hostname is SP2.
+Configure a bandwidth of 256kbps.
+9)Verify the interface is up.
+10)Ping the service provider to verify connectivity.
+11)Configure a default static route for Internet access over the leased line.
+12)Ping the external server at 203.0.113.18 from NY-CPE2 to verify Internet access.
+************
+PPPoE
+13)Configure PPPoE from router NY-CPE2 to the service provider router SP2 according to the network topology diagram.
+Interface Ethernet 0/0 is used on both sides of the link.
+The service provider has instructed you to configure PPP with CHAP authentication using the password Flackbox3.
+Configure one way authentication, do not authenticate the service provider.
+14)Verify the interface is up.
+15)Ping the service provider to verify connectivity.
+16)Configure a default static route for Internet access.
+17)Ping the external server at 203.0.113.18 from NY-CPE2 to verify Internet access.
+ ************
+GRE
+18)Configure a GRE tunnel between NY-CPE1 and BOS-CPE. Use IP addresses in the 192.168.0.0/30 subnet for the tunnel interfaces.
+
+19)The tunnel interfaces will be up as long as the underlying physical interfaces are up. Verify the tunnel setup and connectivity by pinging the tunnel interface on BOS-CPE from NY-CPE1.
+
+20)Do you expect PC1 in New York to be able to ping PC2 in Boston? Why or why not? Verify this.
+
+21)Verify the tunnel interface appears in the routing tables on NY-CPE1 and BOS-CPE.
+
+22)Enable single area OSPF on NY-CPE1 and BOS-CPE. Ensure that the PCs in New York site 1 and Boston have connectivity to each other. Do not enable OSPF on the Internet facing Ethernet 0/0 interface.
+
+23)Ping PC2 from PC1 to verify connectivity through the GRE tunnel.
